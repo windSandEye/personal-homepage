@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es5",                //编译的语言版本
+        "module": "commonjs",           //生成代码的规范标准
+        "allowJs":true,                 //编译时允许有js
+        "emitDecoratorMetadata": true,  //为注解声明加上元数据类型
+        "experimentalDecorators": true, //允许注解语法
+        "sourceMap":true,               //生成js的同时，生成对应的map文件
+        "removeComments":true,          //编译时去除注释
+        "esModuleInterop":true,         //允许export=导出，由import from 导入
+        "allowSyntheticDefaultImports":true,    //允许引入没有默认导出的模块
+        "outDir": "public",            //编译后的文件输出目录
+        "lib": [                       //声明ts需引入的库
+            "es6"
+        ]
+    },
+    "exclude": [                       //排除内容
+        "node_modules"
+    ]
+}
